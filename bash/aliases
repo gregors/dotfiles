@@ -1,0 +1,8 @@
+#bash
+
+alias ..="cd .."
+alias ll="ls -lia -G"
+
+
+#git
+alias glog="git log --oneline --all --graph --decorate -n 20"
