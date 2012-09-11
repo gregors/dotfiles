@@ -6,3 +6,4 @@ alias ll="ls -lia -G"
 
 #git
 alias glog="git log --oneline --all --graph --decorate -n 20"
+alias g="git"
