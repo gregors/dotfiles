@@ -2,6 +2,7 @@
 
 alias ..="cd .."
 alias ll="ls -lia -G"
+alias c="clear"
 
 
 #git
