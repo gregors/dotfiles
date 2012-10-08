@@ -1,35 +1,52 @@
- set nocompatible               " be iMproved
- filetype off                   " required!
+syntax on
+set nocompatible               " be iMproved
+"filetype off                   " required!
+set nocompatible      " We're running Vim, not Vi!
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+set expandtab
+set tabstop=2 shiftwidth=2 softtabstop=2
+set autoindent
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+" make kj to ESC
+inoremap kj <Esc>
 
- " let Vundle manage Vundle
- " required! 
- Bundle 'gmarik/vundle'
+filetype plugin on    " Enable filetype-specific plugins
 
- " My Bundles here:
- "
- " original repos on github
- Bundle 'tpope/vim-fugitive'
- Bundle 'Lokaltog/vim-easymotion'
- Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
- Bundle 'tpope/vim-rails.git'
- Bundle 'tomtom/tcomment_vim.git'
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
- " vim-scripts repos
- Bundle 'L9'
- Bundle 'FuzzyFinder'
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
 
+" My Bundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'msanders/snipmate.vim'
+Bundle 'tpope/vim-rails.git'
+Bundle 'vim-ruby/vim-ruby' 
 
- filetype plugin indent on     " required!
- "
- " Brief help
- " :BundleList          - list configured bundles
- " :BundleInstall(!)    - install(update) bundles
- " :BundleSearch(!) foo - search(or refresh cache first) for foo
- " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
- "
- " see :h vundle for more details or wiki for FAQ
- " NOTE: comments after Bundle command are not allowed..
+Bundle 'vim-scripts/L9'
+Bundle 'vim-scripts/FuzzyFinder'
 
+" Execute open rspec buffer
+" Thanks to Ian Smith-Heisters
+function! RunSpec(args)
+ if exists("b:rails_root") && filereadable(b:rails_root . "/script/spec")
+   let spec = b:rails_root . "/script/spec"
+ else
+   let spec = "spec"
+ end 
+ let cmd = ":! " . spec . " % -cfn " . a:args
+ execute cmd 
+endfunction
+ 
+" Mappings
+" run one rspec example or describe block based on cursor position
+map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)
+" run full rspec file
+map !S :call RunSpec("")

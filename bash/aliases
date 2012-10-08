@@ -8,6 +8,7 @@ alias c="clear"
 #git
 alias glog="git log --oneline --all --graph --decorate -n 20"
 alias g="git"
+alias gfull="git stash;git checkout master;git pull;bundle install;be rake db:setup;be rake db:test:prepare"
 
 #rails
 alias br="bundle exec rspec"
