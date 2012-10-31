@@ -6,10 +6,18 @@ alias c="clear"
 
 
 #git
-alias glog="git log --oneline --all --graph --decorate -n 20"
+alias glog="git log --oneline --all --graph --decorate -n 20 --color"
 alias g="git"
+alias gs="git status"
 alias gfull="git stash;git checkout master;git pull;bundle install;be rake db:setup;be rake db:test:prepare"
 
 #rails
 alias br="bundle exec rspec"
 alias be="bundle exec"
+
+#bundler
+alias b="bundle install"
+
+
+export EDITOR=vim
+export JRUBY_OPTS=--1.9
