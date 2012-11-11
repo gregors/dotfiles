@@ -1,6 +1,6 @@
 #bash
-
 alias ..="cd .."
+alias ...='cd ../..'
 alias ll="ls -lia -G"
 alias c="clear"
 
@@ -11,13 +11,28 @@ alias g="git"
 alias gs="git status"
 alias gfull="git stash;git checkout master;git pull;bundle install;be rake db:setup;be rake db:test:prepare"
 
+#hg
+alias h="hg"
+alias hs="hg status"
+
 #rails
 alias br="bundle exec rspec"
 alias be="bundle exec"
+alias rt="rake -T"
+alias rr="rake routes"
 
 #bundler
 alias b="bundle install"
 
-
 export EDITOR=vim
-export JRUBY_OPTS=--1.9
+
+#jruby
+alias ngs='JRUBY_OPTS="" ruby --ng-server'  # start nailgun server 
+alias ng='JRUBY_OPTS="$JRUBY_OPTS --ng"'
+alias nruby='JRUBY_OPTS="$JRUBY_OPTS --ng" jruby' #jruby using nailgun
+alias nrspec='ng rspec'
+alias nirb='ng irb'
+alias ngem='ng gem'
+alias nrails='ng rails'
+
+#export JRUBY_OPTS=--1.9
