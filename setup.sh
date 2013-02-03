@@ -15,8 +15,8 @@ git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 
 # copy my config files over
-cp .gemrc ..
-cp .gitconfig ..
-cp .hgrc ..
-cp .tmux.conf ..
-cp .vimrc ..
+ln -nfs ~/dot-files/.gemrc ~/.gemrc
+ln -nfs ~/dot-files/.gitconfig ~/.gitconfig
+ln -nfs ~/dot-files/.hgrc ~/.hgrc
+ln -nfs ~/dot-files/.tmux.conf ~/.tmux.conf
+ln -nfs ~/dot-files/.vimrc ~/.vimrc
