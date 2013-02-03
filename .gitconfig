@@ -1,3 +1,6 @@
 [user]
 	email = <gregory.ostermayr@gmail.com>
 	name = Gregory Ostermayr
+
+[color]
+  ui = auto
