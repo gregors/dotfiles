@@ -10,6 +10,8 @@ case $_myos in
   *) alias ll="ls -lia -G";;
 esac
 
+alias ports='netstat -tulanp' #show open ports
+
 #git
 alias glog="git log --oneline --all --graph --decorate -n 20 --color"
 alias g="git"
