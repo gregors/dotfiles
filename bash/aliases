@@ -1,9 +1,14 @@
+_myos="$(uname)"
+
 #bash
 alias ..="cd .."
 alias ...='cd ../..'
-alias ll="ls -lia -G"
 alias c="clear"
 
+case $_myos in
+  Linux) alias ll="ls -lia --color";;
+  *) alias ll="ls -lia -G";;
+esac
 
 #git
 alias glog="git log --oneline --all --graph --decorate -n 20 --color"
