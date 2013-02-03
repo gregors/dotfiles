@@ -2,6 +2,7 @@ set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
+
 set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
@@ -25,6 +26,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-haml.git'
 Bundle 'vim-ruby/vim-ruby' 
 
 Bundle 'vim-scripts/L9'
