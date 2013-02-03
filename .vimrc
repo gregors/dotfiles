@@ -32,6 +32,8 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/FuzzyFinder'
 
+map <Leader>t :FufFile <Esc>
+
 " Execute open rspec buffer
 " Thanks to Ian Smith-Heisters
 function! RunSpec(args)
