@@ -5,7 +5,7 @@ sudo apt-get install -q -y git-core
 sudo apt-get install -q -y tree
 sudo apt-get install -q -y htop
 sudo apt-get install -q -y tmux
-sudo apt-get install -q -y vim
+sudo apt-get install -q -y vim-nox
 sudo apt-get install -q -y wget
 sudo apt-get install -q -y curl
 sudo apt-get install -q -y mercurial
