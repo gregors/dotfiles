@@ -3,6 +3,7 @@ _myos="$(uname)"
 #bash
 alias ..="cd .."
 alias ...='cd ../..'
+alias ....='cd ../../..'
 alias c="clear"
 
 case $_myos in
@@ -12,6 +13,8 @@ esac
 
 alias ports='netstat -tulanp' #show open ports
 alias apt-get="sudo apt-get"
+alias agi="sudo apt-get install"
+alias agu="sudo apt-get update && sudo apt-get upgrade"
 
 #git
 alias glog="git log --oneline --all --graph --decorate -n 20 --color"
