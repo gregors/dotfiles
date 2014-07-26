@@ -10,6 +10,7 @@ case $_myos in
   Linux) alias ll="ls -lia --color";;
   *) alias ll="ls -lia -G";;
 esac
+alias l="ll"
 
 alias ports='netstat -tulanp' #show open ports
 alias apt-get="sudo apt-get"
