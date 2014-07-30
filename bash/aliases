@@ -20,6 +20,7 @@ alias agu="sudo apt-get update && sudo apt-get upgrade"
 #git
 alias glog="git log --oneline --all --graph --decorate -n 20 --color"
 alias g="git"
+alias gb="git branch"
 alias gs="git status"
 alias gfull="git stash;git checkout master;git pull;bundle install;be rake db:setup;be rake db:test:prepare"
 
