@@ -11,6 +11,9 @@ set number
 " make kj to ESC
 inoremap kj <Esc>
 
+nmap ff :FufFile<CR>
+nmap fd :FufDir<CR>
+
 filetype plugin on    " Enable filetype-specific plugins
 
 set rtp+=~/.vim/bundle/vundle/
