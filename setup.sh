@@ -20,3 +20,6 @@ ln -nfs ~/dot-files/.gitconfig ~/.gitconfig
 ln -nfs ~/dot-files/.hgrc ~/.hgrc
 ln -nfs ~/dot-files/.tmux.conf ~/.tmux.conf
 ln -nfs ~/dot-files/.vimrc ~/.vimrc
+
+# set caps lock to ctrl
+setxkbmap -layout us -option ctrl:nocaps
