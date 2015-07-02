@@ -9,6 +9,7 @@ sudo apt-get install -q -y vim-nox
 sudo apt-get install -q -y wget
 sudo apt-get install -q -y curl
 sudo apt-get install -q -y mercurial
+sudo apt-get install -q -y ack-grep
 
 # install vim package manager
 git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
