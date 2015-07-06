@@ -13,6 +13,7 @@ esac
 alias l="ll"
 
 alias ports='netstat -tulanp' #show open ports
+alias osx-ports='netstat -atp tcp | grep -i "listen"'
 alias apt-get="sudo apt-get"
 alias agi="sudo apt-get install"
 alias agu="sudo apt-get update && sudo apt-get upgrade"
