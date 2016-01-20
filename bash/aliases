@@ -59,3 +59,6 @@ alias ngem='ng gem'
 alias nrails='ng rails'
 
 #export JRUBY_OPTS=--1.9
+
+
+alias c5='~/c5/sites'
