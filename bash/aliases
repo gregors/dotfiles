@@ -21,12 +21,13 @@ alias agi="sudo apt-get install"
 alias agu="sudo apt-get update && sudo apt-get upgrade"
 
 #git
-alias glog="git log --oneline --all --graph --decorate -n 20 --color"
 alias g="git"
 alias gb="git branch"
 alias gd="git diff"
 alias gs="git status"
 alias gfull="git stash;git checkout master;git pull;bundle install;be rake db:setup;be rake db:test:prepare"
+alias glog="git log --oneline --all --graph --decorate -n 40 --color"
+alias gtoday="git log --graph --since='1 Day Ago' --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'"
 
 #hg
 alias h="hg"
