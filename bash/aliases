@@ -4,6 +4,8 @@ _myos="$(uname)"
 alias ..="cd .."
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 alias c="clear"
 
 case $_myos in
