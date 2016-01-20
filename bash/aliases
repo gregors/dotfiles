@@ -14,8 +14,11 @@ case $_myos in
 esac
 alias l="ll"
 
-alias ports='netstat -tulanp' #show open ports
-alias osx-ports='netstat -atp tcp | grep -i "listen"'
+case $_myos in
+  Linux) alias ports='netstat -tulanp';; #show open ports
+  *) alias ports='netstat -atp tcp | grep -i "listen"';;
+esac
+
 alias apt-get="sudo apt-get"
 alias agi="sudo apt-get install"
 alias agu="sudo apt-get update && sudo apt-get upgrade"
