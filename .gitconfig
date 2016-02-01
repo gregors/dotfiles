@@ -4,3 +4,5 @@
 
 [color]
   ui = auto
+[core]
+	excludesfile = ~/.gitignore

@@ -25,3 +25,6 @@ ln -nfs ~/dot-files/.vimrc ~/.vimrc
 
 # set caps lock to ctrl
 setxkbmap -layout us -option ctrl:nocaps
+
+git config --global core.excludesfile '~/.gitignore'
+ln -nfs ~/dot-files/.gitignore ~/.gitignore
