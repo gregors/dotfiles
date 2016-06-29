@@ -39,6 +39,9 @@ Bundle 'vim-scripts/FuzzyFinder'
 
 Bundle 'git://git.wincent.com/command-t.git'
 
+
+Bundle 'gummesson/stereokai'
+
 "map <Leader>t :FufFile <Esc>
 
 " Execute open rspec buffer
