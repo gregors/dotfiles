@@ -62,3 +62,5 @@ alias nrails='ng rails'
 
 
 alias c5='~/c5/sites'
+
+alias brick="ruby -run -e httpd . -p 9000"
