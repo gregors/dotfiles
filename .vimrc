@@ -1,12 +1,10 @@
 set nocompatible      " We're running Vim, not Vi!
-syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
 
 set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 set number
+set encoding=utf-8
 
 " make kj to ESC
 inoremap kj <Esc>
@@ -20,27 +18,49 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" required!
+Plugin 'gmarik/vundle'
 
-" My Bundles here:
-"
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'msanders/snipmate.vim'
-Bundle 'tpope/vim-rails.git'
-Bundle 'tpope/vim-haml.git'
-Bundle 'vim-ruby/vim-ruby' 
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'msanders/snipmate.vim'
+Plugin 'leafgarland/typescript-vim'
 
-Bundle 'vim-scripts/L9'
-Bundle 'vim-scripts/FuzzyFinder'
+" languages
+Plugin 'tpope/vim-rails.git'
+"Plugin 'tpope/vim-haml.git'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'elixir-editors/vim-elixir'
+Plugin 'digitaltoad/vim-jade'
 
-Bundle 'git://git.wincent.com/command-t.git'
+Plugin 'vim-scripts/L9'
+Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'ctrlpvim/ctrlp.vim'
 
+Plugin 'git://git.wincent.com/command-t.git'
 
-Bundle 'gummesson/stereokai'
+filetype off
+"Plugin 'kchmck/vim-coffee-script'
+"Plugin 'jeroenbourgois/vim-actionscript'
+
+"Plugin 'gummesson/stereokai'
+
+syntax on             " Enable syntax highlighting
+colorscheme stereokai
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+
+autocmd FileType c,cpp,java,php,ruby,rb autocmd BufWritePre <buffer> %s/\s\+$//e
+
+function! RubyMethodFold(line)
+  let line_is_method_or_end = synIDattr(synID(a:line,1,0), 'name') == 'rubyMethodBlock'
+  let line_is_def = getline(a:line) =~ '\s*def '
+  return line_is_method_or_end || line_is_def
+endfunction
+
+set foldexpr=RubyMethodFold(v:lnum)
 
 "map <Leader>t :FufFile <Esc>
 
@@ -51,13 +71,25 @@ function! RunSpec(args)
    let spec = b:rails_root . "/script/spec"
  else
    let spec = "spec"
- end 
+ end
  let cmd = ":! " . spec . " % -cfn " . a:args
- execute cmd 
+ execute cmd
 endfunction
- 
+
 " Mappings
 " run one rspec example or describe block based on cursor position
 map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)
 " run full rspec file
 map !S :call RunSpec("")
+
+
+" tell vim to keep a backup file
+set backup
+
+" tell vim where to put its backup files
+set backupdir=/private/tmp
+
+" tell vim where to put swap files
+set dir=/private/tmp
+set noswapfile
+

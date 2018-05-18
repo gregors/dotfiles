@@ -31,8 +31,9 @@ alias gb="git branch"
 alias gd="git diff"
 alias gs="git status"
 alias gfull="git stash;git checkout master;git pull;bundle install;be rake db:setup;be rake db:test:prepare"
-alias glog="git log --oneline --all --graph --decorate -n 40 --color"
+alias glog="git log --oneline %ge --all --graph --decorate -n 40 --color"
 alias gtoday="git log --graph --since='1 Day Ago' --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'"
+alias glog2="git log --all --graph  -n 40 --abbrev-commit  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'"
 
 #hg
 alias h="hg"
@@ -64,3 +65,6 @@ alias nrails='ng rails'
 alias c5='~/c5/sites'
 
 alias brick="ruby -run -e httpd . -p 9000"
+
+#  enable history for Elixir's IEX
+export ERL_AFLAGS="-kernel shell_history enabled"
