@@ -61,9 +61,6 @@ alias nrails='ng rails'
 
 #export JRUBY_OPTS=--1.9
 
-
-alias c5='~/c5/sites'
-
 alias brick="ruby -run -e httpd . -p 9000"
 
 #  enable history for Elixir's IEX
