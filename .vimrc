@@ -14,14 +14,11 @@ nmap fd :FufDir<CR>
 
 filetype plugin on    " Enable filetype-specific plugins
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" let Vundle manage Vundle
-" required!
-Plugin 'gmarik/vundle'
-
-" original repos on github
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'Lokaltog/vim-easymotion'
@@ -30,29 +27,45 @@ Plugin 'leafgarland/typescript-vim'
 
 " languages
 Plugin 'tpope/vim-rails.git'
-"Plugin 'tpope/vim-haml.git'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-editors/vim-elixir'
-Plugin 'digitaltoad/vim-jade'
 
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ap/vim-css-color'
 
 Plugin 'git://git.wincent.com/command-t.git'
 
-filetype off
-"Plugin 'kchmck/vim-coffee-script'
-"Plugin 'jeroenbourgois/vim-actionscript'
+" colorscheme 
+Plugin 'patstockwell/vim-monokai-tasty'
+Plugin 'gregors/vim-colors-codeschool'
+Plugin 'fcpg/vim-fahrenheit'
+Plugin 'fcpg/vim-orbital'
+Plugin 'slugbyte/yuejiu'
+Plugin 'semibran/vim-colors-synthetic'
+Plugin 'szorfein/fantasy.vim'
+Plugin 'julien/vim-miniml'
+Plugin 'acarapetis/vim-colors-github'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'jpo/vim-railscasts-theme'
 
-"Plugin 'gummesson/stereokai'
+call vundle#end()            " required
+
+colorscheme codeschool 
+
+filetype off
+
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'jeroenbourgois/vim-actionscript'
+" Plugin 'digitaltoad/vim-jade'
+" Plugin 'tpope/vim-haml.git'
 
 syntax on             " Enable syntax highlighting
-colorscheme stereokai
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 
-autocmd FileType c,cpp,java,php,ruby,rb autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cpp,java,php,ruby,rb,ex,exs autocmd BufWritePre <buffer> %s/\s\+$//e
 
 function! RubyMethodFold(line)
   let line_is_method_or_end = synIDattr(synID(a:line,1,0), 'name') == 'rubyMethodBlock'
@@ -87,7 +100,7 @@ map !S :call RunSpec("")
 set backup
 
 " tell vim where to put its backup files
-set backupdir=/private/tmp
+set backupdir=~/.vim/backups
 
 " tell vim where to put swap files
 set dir=/private/tmp
