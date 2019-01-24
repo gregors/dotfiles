@@ -13,7 +13,7 @@ sudo apt-get install -q -y ack-grep
 sudo apt-get install -q -y sqlite3
 
 # install vim package manager
-git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
 # copy my config files over
