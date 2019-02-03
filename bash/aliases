@@ -44,6 +44,7 @@ alias br="bundle exec rspec"
 alias be="bundle exec"
 alias rt="rake -T"
 alias rr="rake routes"
+alias drc="docker run --rm -it railsapp bundle exec rails c"
 
 #bundler
 alias b="bundle install"
@@ -65,3 +66,4 @@ alias brick="ruby -run -e httpd . -p 9000"
 
 #  enable history for Elixir's IEX
 export ERL_AFLAGS="-kernel shell_history enabled"
+
