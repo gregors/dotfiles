@@ -90,10 +90,16 @@ function! RunSpec(args)
 endfunction
 
 " Mappings
+"
 " run one rspec example or describe block based on cursor position
 map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)
+
 " run full rspec file
 map !S :call RunSpec("")
+
+" lhs comments
+map ,# :s/^/#/<CR>
+map ,/ :s/^/\/\//<CR>
 
 
 " tell vim to keep a backup file
