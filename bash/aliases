@@ -49,6 +49,9 @@ alias drc="docker run --rm -it railsapp bundle exec rails c"
 #bundler
 alias b="bundle install"
 
+#docker
+alias dc="docker-compose"
+
 export EDITOR=vim
 
 #jruby
