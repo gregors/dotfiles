@@ -67,6 +67,10 @@ filetype indent on    " Enable filetype-specific indenting
 
 autocmd FileType c,cpp,java,php,ruby,rb,ex,exs autocmd BufWritePre <buffer> %s/\s\+$//e
 
+" show hidden files
+" https://stackoverflow.com/questions/5057359/how-can-i-show-hidden-files-starting-with-period-in-nerdtree
+let NERDTreeShowHidden=1
+
 function! RubyMethodFold(line)
   let line_is_method_or_end = synIDattr(synID(a:line,1,0), 'name') == 'rubyMethodBlock'
   let line_is_def = getline(a:line) =~ '\s*def '
