@@ -17,6 +17,10 @@ esac
 alias l="ll"
 
 case $_myos in
+ Linux> alias pbcopy="xclip -sel clip ";;
+esac
+
+case $_myos in
   Linux) alias ports='netstat -tulanp';; #show open ports
   *) alias ports='netstat -atp tcp | grep -i "listen"';;
 esac

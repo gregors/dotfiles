@@ -12,7 +12,8 @@ sudo apt-get install -q -y curl
 sudo apt-get install -q -y mercurial
 sudo apt-get install -q -y ack-grep
 sudo apt-get install -q -y sqlite3
-# 
+sudo apt-get install -q -y xclip
+
 # install vim package manager
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
