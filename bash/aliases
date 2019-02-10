@@ -14,10 +14,11 @@ case $_myos in
   Linux) alias ll="ls -lia --color";;
   *) alias ll="ls -lia -G";;
 esac
+
 alias l="ll"
 
 case $_myos in
- Linux> alias pbcopy="xclip -sel clip ";;
+ Linux) alias pbcopy="xclip -sel clip ";;
 esac
 
 case $_myos in
