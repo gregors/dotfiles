@@ -56,6 +56,8 @@ alias b="bundle install"
 
 #docker
 alias dc="docker-compose"
+alias dps="docker ps"
+alias da="docker attach"
 
 export EDITOR=vim
 
