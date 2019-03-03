@@ -8,6 +8,7 @@ set encoding=utf-8
 
 " make kj to ESC
 inoremap kj <Esc>
+autocmd BufWritePre * :%s/\s\+$//e
 
 nmap ff :FufFile<CR>
 nmap fd :FufDir<CR>
