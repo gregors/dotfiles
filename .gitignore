@@ -2,3 +2,5 @@
 *.swo
 boom.txt
 deleteme.txt
+*.vim
+*.log
