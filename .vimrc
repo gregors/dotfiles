@@ -8,12 +8,21 @@ set encoding=utf-8
 
 " make kj to ESC
 inoremap kj <Esc>
-autocmd BufWritePre * :%s/\s\+$//e
+inoremap jk <Esc>
+inoremap jj <Esc>
 
 nmap ff :FufFile<CR>
 nmap fd :FufDir<CR>
+" nmap <Leader>t :FufFile <Esc>
 
-filetype plugin on    " Enable filetype-specific plugins
+" Shortcut to rapidly toggle `set list` - shows whitespace
+nmap <leader>l :set list!<CR>
+
+" lhs comments
+map ,# :s/^/#/<CR>
+map ,/ :s/^/\/\//<CR>
+
+filetype plugin on  " Enable filetype-specific plugins
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -24,33 +33,35 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'msanders/snipmate.vim'
-Plugin 'leafgarland/typescript-vim'
 
 " languages
 Plugin 'tpope/vim-rails.git'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'leafgarland/typescript-vim'
 
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'wincent/command-t'
+
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ap/vim-css-color'
 
-Plugin 'git://git.wincent.com/command-t.git'
 
 " colorscheme
-Plugin 'patstockwell/vim-monokai-tasty'
+Plugin 'xdefrag/vim-beelzebub'
 Plugin 'gregors/vim-colors-codeschool'
 Plugin 'fcpg/vim-fahrenheit'
 Plugin 'fcpg/vim-orbital'
 Plugin 'slugbyte/yuejiu'
 Plugin 'semibran/vim-colors-synthetic'
 Plugin 'szorfein/fantasy.vim'
+Plugin 'jpo/vim-railscasts-theme'
 Plugin 'julien/vim-miniml'
 Plugin 'acarapetis/vim-colors-github'
 Plugin 'nanotech/jellybeans.vim'
-Plugin 'jpo/vim-railscasts-theme'
-Plugin 'xdefrag/vim-beelzebub'
+Plugin 'patstockwell/vim-monokai-tasty'
+Plugin 'vim-scripts/C64.vim'
 
 call vundle#end()            " required
 
@@ -82,7 +93,6 @@ endfunction
 
 set foldexpr=RubyMethodFold(v:lnum)
 
-"map <Leader>t :FufFile <Esc>
 
 " Execute open rspec buffer
 " Thanks to Ian Smith-Heisters
@@ -103,11 +113,6 @@ map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)
 
 " run full rspec file
 map !S :call RunSpec("")
-
-" lhs comments
-map ,# :s/^/#/<CR>
-map ,/ :s/^/\/\//<CR>
-
 
 " tell vim to keep a backup file
 set backup
