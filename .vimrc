@@ -61,6 +61,7 @@ Plugin 'julien/vim-miniml'
 Plugin 'acarapetis/vim-colors-github'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'patstockwell/vim-monokai-tasty'
+Plugin 'joshdick/onedark.vim'
 Plugin 'vim-scripts/C64.vim'
 
 call vundle#end()            " required
