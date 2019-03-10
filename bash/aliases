@@ -9,6 +9,7 @@ alias ......='cd ../../../../..'
 alias c="clear"
 alias gmail="open https://gmail.com"
 alias gcal="open https://calendar.google.com/calendar/render#main_7"
+alias hs="history | grep"
 
 case $_myos in
   Linux) alias ll="ls -lia --color";;
@@ -64,7 +65,7 @@ alias da="docker attach"
 export EDITOR=vim
 
 #jruby
-alias ngs='JRUBY_OPTS="" ruby --ng-server'  # start nailgun server 
+alias ngs='JRUBY_OPTS="" ruby --ng-server'  # start nailgun server
 alias ng='JRUBY_OPTS="$JRUBY_OPTS --ng"'
 alias nruby='JRUBY_OPTS="$JRUBY_OPTS --ng" jruby' #jruby using nailgun
 alias nrspec='ng rspec'
