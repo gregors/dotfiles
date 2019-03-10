@@ -38,7 +38,7 @@ Plugin 'ap/vim-css-color'
 
 Plugin 'git://git.wincent.com/command-t.git'
 
-" colorscheme 
+" colorscheme
 Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'gregors/vim-colors-codeschool'
 Plugin 'fcpg/vim-fahrenheit'
@@ -50,10 +50,11 @@ Plugin 'julien/vim-miniml'
 Plugin 'acarapetis/vim-colors-github'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'jpo/vim-railscasts-theme'
+Plugin 'xdefrag/vim-beelzebub'
 
 call vundle#end()            " required
 
-colorscheme codeschool 
+colorscheme codeschool
 
 filetype off
 
