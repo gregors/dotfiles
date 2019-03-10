@@ -22,7 +22,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'Lokaltog/vim-easymotion'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'msanders/snipmate.vim'
 Plugin 'leafgarland/typescript-vim'
 
