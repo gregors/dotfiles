@@ -67,6 +67,7 @@ syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd FileType c,cpp,java,php,ruby,rb,ex,exs autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " show hidden files
