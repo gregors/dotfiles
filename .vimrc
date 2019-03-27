@@ -39,6 +39,7 @@ Plugin 'tpope/vim-rails.git'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'fatih/vim-go'
 
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
