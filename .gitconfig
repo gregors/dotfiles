@@ -1,8 +1,11 @@
 [user]
 	email = <gregory.ostermayr@gmail.com>
 	name = Gregory Ostermayr
+	signingkey = 4AAC743A6731895C
 
 [color]
   ui = auto
 [core]
 	excludesfile = ~/.gitignore
+[commit]
+	gpgsign = true

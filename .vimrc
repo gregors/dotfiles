@@ -40,6 +40,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'fatih/vim-go'
+Plugin 'rhysd/vim-crystal'
 
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
