@@ -11,6 +11,9 @@ inoremap kj <Esc>
 inoremap jk <Esc>
 inoremap jj <Esc>
 
+ca tn tabnew
+ca te tabedit
+
 nmap ff :FufFile<CR>
 nmap fd :FufDir<CR>
 " nmap <Leader>t :FufFile <Esc>
@@ -21,6 +24,8 @@ nmap <leader>l :set list!<CR>
 " lhs comments
 map ,# :s/^/#/<CR>
 map ,/ :s/^/\/\//<CR>
+map H ^
+map L $
 
 filetype plugin on  " Enable filetype-specific plugins
 
