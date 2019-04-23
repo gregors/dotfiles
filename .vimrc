@@ -40,6 +40,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'msanders/snipmate.vim'
 
 " languages
+Plugin 'posva/vim-vue'
 Plugin 'tpope/vim-rails.git'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-editors/vim-elixir'

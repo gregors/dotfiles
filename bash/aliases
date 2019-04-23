@@ -10,6 +10,8 @@ alias c="clear"
 alias gmail="open https://gmail.com"
 alias gcal="open https://calendar.google.com/calendar/render#main_7"
 alias hs="history | grep"
+alias ackjs="ack --ignore-dir=coverage --ignore-dir=dist --ignore-dir=bundles --ignore-dir=node_modules --ignore-dir=static --ignore-dir=assets"
+alias unsafe_chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security  --user-data-dir=""'
 
 case $_myos in
   Linux) alias ll="ls -lia --color";;
