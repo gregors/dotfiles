@@ -37,7 +37,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'msanders/snipmate.vim'
+Plugin 'garbas/vim-snipmate'
 
 " languages
 Plugin 'posva/vim-vue'
