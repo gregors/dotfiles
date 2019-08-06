@@ -11,6 +11,7 @@ export BLUE="$(tput setaf 4)"
 export MAGENTA="$(tput setaf 5)"
 export CYAN="$(tput setaf 6)"
 export WHITE="$(tput setaf 7)"
+export GRAY="$(tput setaf 244)"
 
 parse_git_dirty() {
   FLAGS=('--porcelain' '--ignore-submodules=dirty')
@@ -31,7 +32,7 @@ git_branch() {
   git rev-parse --abbrev-ref HEAD
 }
 
-export PS1="\u $GREEN\W$YELLOW \$(git_branch)$NORMAL $GREEN\$(git_current_sha)$NORMAL $RED\$(parse_git_dirty)$NORMAL$ " 
+export PS1="\u $GREEN\W$YELLOW \$(git_branch)$NORMAL $GRAY\$(git_current_sha)$NORMAL $RED\$(parse_git_dirty)$NORMAL$ " 
 
 export HISTIGNORE="...:..:pwd:ls:ll:cd:history:cd -:dc:dps:exit:fg:gs:gd:gt:git gui:git push:gp:git add .:git push:htop:jobs:tree:vim"
 HISTSIZE=10000
