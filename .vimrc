@@ -37,7 +37,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'garbas/vim-snipmate'
 
 " languages
 Plugin 'posva/vim-vue'
@@ -74,7 +73,8 @@ Plugin 'vim-scripts/C64.vim'
 
 call vundle#end()            " required
 
-colorscheme codeschool
+" colorscheme codeschool
+colorscheme fahrenheit
 
 filetype off
 
