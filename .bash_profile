@@ -24,12 +24,21 @@ parse_git_dirty() {
 } 
 
 git_current_sha() {
-  current_sha=$(git rev-parse --verify HEAD)
-  echo ${current_sha::6}
+  current_sha=$(git rev-parse --verify HEAD 2> /dev/null )
+  if [[ -n $current_sha ]]; then
+    echo ${current_sha::6}
+  else
+    echo ""
+  fi
 }
 
 git_branch() {
-  git rev-parse --abbrev-ref HEAD
+  branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null )
+  if [[ -n $branch ]]; then
+    echo branch
+  else
+    echo ""
+  fi
 }
 
 export PS1="\u $GREEN\W$YELLOW \$(git_branch)$NORMAL $GRAY\$(git_current_sha)$NORMAL $RED\$(parse_git_dirty)$NORMAL$ " 
