@@ -5,12 +5,25 @@
 brew instal git
 brew install git bash-completion
 
-brew instal tree
-brew instal htop
-brew instal tmux
-brew install wget
-brew install curl
 brew install ack
+brew install curl
+brew instal htop
+brew instal jq
+brew instal tmux
+brew instal tree
+brew install wget
+brew install with-readline
+
+brew install crystal
+brew install erlang
+brew install elixir
+brew install go
+brew install node
+brew install rust
+
+brew install mongodb
+brew install redis
+brew install postgresql
 
 # install vim package manager
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
