@@ -17,6 +17,7 @@ brew install httpie
 brew install rig
 
 brew install crystal
+brew install clojure
 brew install erlang
 brew install elixir
 brew install go
