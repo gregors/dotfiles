@@ -13,6 +13,8 @@ brew instal tmux
 brew instal tree
 brew install wget
 brew install with-readline
+brew install httpie
+brew install rig
 
 brew install crystal
 brew install erlang
@@ -24,6 +26,10 @@ brew install rust
 brew install mongodb
 brew install redis
 brew install postgresql
+
+brew install sl
+brew install cowsay
+brew install ponysay
 
 # install vim package manager
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim

@@ -133,3 +133,6 @@ set backupdir=~/.vim/backups
 set dir=/private/tmp
 set noswapfile
 
+" remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
