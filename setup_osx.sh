@@ -46,3 +46,5 @@ cp ~/dot-files/.bash_profile ~/.bash_profile
 
 git config --global core.excludesfile '~/.gitignore'
 ln -nfs ~/dot-files/.gitignore ~/.gitignore
+
+npm install -g wscat
