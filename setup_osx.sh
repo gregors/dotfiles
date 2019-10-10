@@ -17,6 +17,7 @@ brew install httpie
 brew install rig
 brew install lynx
 brew install aspell
+brew install dos2unix
 
 # languaages
 brew install crystal
