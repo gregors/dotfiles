@@ -1,3 +1,9 @@
+# sqlite on osx via brew
+#export PATH="/usr/local/opt/sqlite/bin:$PATH"
+#export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+#export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+#export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/sqlite/lib/pkgconfig
+
 source ~/dot-files/bash/aliases
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
@@ -21,7 +27,7 @@ parse_git_dirty() {
   else
     echo ""
   fi
-} 
+}
 
 git_current_sha() {
   current_sha=$(git rev-parse --verify HEAD 2> /dev/null )
@@ -41,7 +47,7 @@ git_branch() {
   fi
 }
 
-export PS1="\u $GREEN\W$YELLOW \$(git_branch)$NORMAL $GRAY\$(git_current_sha)$NORMAL $RED\$(parse_git_dirty)$NORMAL$ " 
+export PS1="\u $GREEN\W$YELLOW \$(git_branch)$NORMAL $GRAY\$(git_current_sha)$NORMAL $RED\$(parse_git_dirty)$NORMAL\n$ "
 
 export HISTIGNORE="...:..:pwd:ls:ll:cd:history:cd -:dc:dps:exit:fg:gs:gd:gt:git gui:git push:gp:git add .:git push:htop:jobs:tree:vim"
 HISTSIZE=10000
