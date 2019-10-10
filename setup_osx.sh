@@ -54,3 +54,5 @@ git config --global core.excludesfile '~/.gitignore'
 ln -nfs ~/dot-files/.gitignore ~/.gitignore
 
 npm install -g wscat
+curl -o- -L https://yarnpkg.com/install.sh | bash
+
