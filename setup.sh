@@ -3,6 +3,7 @@
 # install packages
 sudo apt-get install -q -y git-core
 sudo apt-get install git bash-completion
+
 sudo apt-get install -q -y tree
 sudo apt-get install -q -y htop
 sudo apt-get install -q -y tmux
@@ -11,8 +12,13 @@ sudo apt-get install -q -y wget
 sudo apt-get install -q -y curl
 sudo apt-get install -q -y mercurial
 sudo apt-get install -q -y ack-grep
-sudo apt-get install -q -y sqlite3
 sudo apt-get install -q -y xclip
+
+# databases
+sudo apt-get install -q -y sqlite3
+sudo apt-get install -q -y postgresql
+sudo apt-get install -q -y redis
+sudo apt-get install -q -y mongodb
 
 # install vim package manager
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim

@@ -15,7 +15,10 @@ brew install wget
 brew install with-readline
 brew install httpie
 brew install rig
+brew install lynx
+brew install aspell
 
+# languaages
 brew install crystal
 brew install clojure
 brew install erlang
@@ -24,9 +27,11 @@ brew install go
 brew install node
 brew install rust
 
-brew install mongodb
-brew install redis
+# databases
+brew install sqlite
 brew install postgresql
+brew install redis
+brew install mongodb
 
 brew install sl
 brew install cowsay
