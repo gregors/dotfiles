@@ -22,6 +22,8 @@ sudo apt-get install -q -y mongodb
 
 # fun
 sudo apt-get install -q -y neofetch
+sudo apt-get install -q -y tty-clock
+#apt-get install cmatrix cmatrix-xfont libaa-bin caca-utils bb
 
 # install vim package manager
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -39,3 +41,18 @@ ln -nfs ~/dot-files/.vimrc ~/.vimrc
 
 git config --global core.excludesfile '~/.gitignore'
 ln -nfs ~/dot-files/.gitignore ~/.gitignore
+
+# annoyances
+sudo apt remove tracker
+sudo apt purge whoopsie
+
+sudo systemctl disable postgresql
+sudo systemctl disable redis
+sudo systemctl disable mongodb
+sudo systemctl disable bluetooth
+
+sudo systemctl stop postgresql
+sudo systemctl stop redis
+sudo systemctl stop mongodb
+sudo systemctl stop bluetooth
+
