@@ -37,6 +37,7 @@ brew install mongodb
 brew install sl
 brew install cowsay
 brew install ponysay
+brew install neofetch
 
 # install vim package manager
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
