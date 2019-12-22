@@ -5,19 +5,20 @@
 brew instal git
 brew install git bash-completion
 
+brew instal tree
+brew instal htop
+brew instal tmux
 brew install ack
 brew install curl
-brew instal htop
-brew instal jq
-brew instal tmux
-brew instal tree
 brew install wget
-brew install with-readline
 brew install httpie
+brew instal jq
+brew install with-readline
 brew install rig
 brew install lynx
 brew install aspell
 brew install dos2unix
+brew install bat
 
 # languaages
 brew install crystal

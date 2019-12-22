@@ -7,12 +7,19 @@ sudo apt-get install git bash-completion
 sudo apt-get install -q -y tree
 sudo apt-get install -q -y htop
 sudo apt-get install -q -y tmux
-sudo apt-get install -q -y vim-nox
 sudo apt-get install -q -y wget
 sudo apt-get install -q -y curl
+sudo apt-get install -q -y httpie
+sudo apt-get install -q -y jq
 sudo apt-get install -q -y mercurial
 sudo apt-get install -q -y ack-grep
 sudo apt-get install -q -y xclip
+sudo apt-get install -q -y lynx
+sudo apt-get install -q -y aspell
+sudo apt-get install -q -y dos2unix
+sudo apt-get install -q -y bat
+
+sudo apt-get install -q -y vim-nox
 
 # databases
 sudo apt-get install -q -y sqlite3
@@ -21,6 +28,8 @@ sudo apt-get install -q -y redis
 sudo apt-get install -q -y mongodb
 
 # fun
+sudo apt-get install -q -y sl
+sudo apt-get install -q -y cowsay
 sudo apt-get install -q -y neofetch
 sudo apt-get install -q -y tty-clock
 #apt-get install cmatrix cmatrix-xfont libaa-bin caca-utils bb
