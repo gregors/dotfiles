@@ -45,15 +45,15 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
 # copy my config files over
-ln -nfs ~/dot-files/.gemrc ~/.gemrc
-ln -nfs ~/dot-files/.gitconfig ~/.gitconfig
-ln -nfs ~/dot-files/.hgrc ~/.hgrc
-ln -nfs ~/dot-files/.tmux.conf ~/.tmux.conf
-ln -nfs ~/dot-files/.vimrc ~/.vimrc
-cp ~/dot-files/.bash_profile ~/.bash_profile
+ln -nfs ~/dotfiles/.gemrc ~/.gemrc
+ln -nfs ~/dotfiles/.gitconfig ~/.gitconfig
+ln -nfs ~/dotfiles/.hgrc ~/.hgrc
+ln -nfs ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -nfs ~/dotfiles/.vimrc ~/.vimrc
+cp ~/dotfiles/.bash_profile ~/.bash_profile
 
 git config --global core.excludesfile '~/.gitignore'
-ln -nfs ~/dot-files/.gitignore ~/.gitignore
+ln -nfs ~/dotfiles/.gitignore ~/.gitignore
 
 npm install -g wscat
 curl -o- -L https://yarnpkg.com/install.sh | bash
