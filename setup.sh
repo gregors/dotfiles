@@ -59,9 +59,11 @@ sudo systemctl disable postgresql
 sudo systemctl disable redis
 sudo systemctl disable mongodb
 sudo systemctl disable bluetooth
+sudo systemctl disable cups
 
 sudo systemctl stop postgresql
 sudo systemctl stop redis
 sudo systemctl stop mongodb
 sudo systemctl stop bluetooth
+sudo systemctl stop cups
 
