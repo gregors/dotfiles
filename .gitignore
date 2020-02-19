@@ -7,6 +7,7 @@
 *.sln
 *.sw*
 *.vim
+tmux_start.sh
 
 # Log files
 *.log
