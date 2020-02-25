@@ -3,6 +3,7 @@
 # install brew
 
 brew instal git
+brew install git-gui
 brew install git bash-completion
 
 brew instal tree
