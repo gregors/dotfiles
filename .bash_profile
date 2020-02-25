@@ -4,7 +4,7 @@
 #export CPPFLAGS="-I/usr/local/opt/sqlite/include"
 #export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/sqlite/lib/pkgconfig
 
-source ~/dot-files/bash/aliases
+source ~/dotfiles/bash/aliases
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
