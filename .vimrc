@@ -43,7 +43,7 @@ Plugin 'posva/vim-vue'
 Plugin 'tpope/vim-rails.git'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-editors/vim-elixir'
-Plugin 'leafgarland/typescript-vim'
+" Plugin 'leafgarland/typescript-vim'
 Plugin 'fatih/vim-go'
 Plugin 'rhysd/vim-crystal'
 Plugin 'andys8/vim-elm-syntax'
@@ -54,6 +54,9 @@ Plugin 'wincent/command-t'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ap/vim-css-color'
+
+Plugin 'pangloss/vim-javascript'
+Plugin 'evanleck/vim-svelte'
 
 
 " colorscheme
