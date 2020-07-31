@@ -28,6 +28,7 @@ brew install clojure
 brew install erlang
 brew install elixir
 brew install go
+brew install mit-scheme
 brew install node
 brew install rust
 
