@@ -23,6 +23,7 @@ brew install bat
 
 # languaages
 brew install crystal
+brew install clisp
 brew install clojure
 brew install erlang
 brew install elixir
