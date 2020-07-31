@@ -134,7 +134,7 @@ set backup
 set backupdir=~/.vim/backups
 
 " tell vim where to put swap files
-set dir=/private/tmp
+" set dir=/private/tmp
 set noswapfile
 
 " remove trailing whitespace on save
