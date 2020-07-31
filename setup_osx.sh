@@ -22,6 +22,7 @@ brew install dos2unix
 brew install bat
 
 # languaages
+brew install gnu-apl
 brew install crystal
 brew install clisp
 brew install clojure
