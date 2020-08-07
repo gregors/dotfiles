@@ -12,6 +12,7 @@ brew instal tmux
 brew install ack
 brew install curl
 brew install wget
+brew install heroku
 brew install httpie
 brew instal jq
 brew install with-readline
