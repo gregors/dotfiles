@@ -12,7 +12,6 @@ brew instal tmux
 brew install ack
 brew install curl
 brew install wget
-brew install heroku
 brew install httpie
 brew instal jq
 brew install with-readline
@@ -21,8 +20,11 @@ brew install lynx
 brew install aspell
 brew install dos2unix
 brew install bat
+brew install pgcli
 
-# languaages
+brew tap heroku/brew && brew install heroku
+
+# languages
 brew install gnu-apl
 brew install crystal
 brew install clisp
