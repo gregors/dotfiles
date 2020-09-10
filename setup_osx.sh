@@ -21,7 +21,8 @@ brew install aspell
 brew install dos2unix
 brew install bat
 brew install pgcli
-vew install macvim
+brew install ripgrep
+brew install macvim
 
 brew tap heroku/brew && brew install heroku
 
