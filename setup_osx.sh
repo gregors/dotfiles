@@ -29,6 +29,7 @@ brew install ripgrep
 
 brew tap heroku/brew && brew install heroku
 brew install awscli
+brew install docker-compose
 
 # browsers
 brew cask install google-chrome
