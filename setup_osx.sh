@@ -26,9 +26,18 @@ brew install dos2unix
 brew install bat
 brew install pgcli
 brew install ripgrep
-brew install macvim
 
 brew tap heroku/brew && brew install heroku
+brew install awscli
+
+# browsers
+brew cask install google-chrome
+brew cask install firefox
+
+# editors
+brew intall vim
+brew install
+brew cask install visual-studio-code
 
 # languages
 brew install gnu-apl
@@ -47,6 +56,8 @@ brew install sqlite
 brew install postgresql
 brew install redis
 brew install mongodb
+brew cask install pgadmin4
+brew cask install graphiql
 
 brew install sl
 brew install cowsay
