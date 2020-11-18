@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# install brew
+# xcode ftw
+xcode-select --install
+
+# install brew - this seems pretty dangerous tbh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 brew instal git
 brew install git-gui
@@ -49,6 +53,8 @@ brew install cowsay
 brew install ponysay
 brew install neofetch
 
+brew cask install mactex
+
 # install vim package manager
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -56,7 +62,6 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # copy my config files over
 ln -nfs ~/dotfiles/.gemrc ~/.gemrc
 ln -nfs ~/dotfiles/.gitconfig ~/.gitconfig
-ln -nfs ~/dotfiles/.hgrc ~/.hgrc
 ln -nfs ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -nfs ~/dotfiles/.vimrc ~/.vimrc
 cp ~/dotfiles/.bash_profile ~/.bash_profile
