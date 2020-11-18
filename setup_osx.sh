@@ -59,6 +59,7 @@ brew install redis
 brew install mongodb
 brew cask install pgadmin4
 brew cask install graphiql
+brew cask install robo-3t
 
 brew install sl
 brew install cowsay
