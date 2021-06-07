@@ -39,28 +39,27 @@ Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 
 " languages
-Plugin 'posva/vim-vue'
-Plugin 'tpope/vim-rails.git'
-Plugin 'vim-ruby/vim-ruby'
+" Plugin 'posva/vim-vue'
+" Plugin 'tpope/vim-rails.git'
+" Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-editors/vim-elixir'
-" Plugin 'leafgarland/typescript-vim'
-Plugin 'fatih/vim-go'
-Plugin 'rhysd/vim-crystal'
-Plugin 'andys8/vim-elm-syntax'
+"Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
+" Plugin 'fatih/vim-go'
+"Plugin 'rhysd/vim-crystal'
+" Plugin 'andys8/vim-elm-syntax'
 
-Plugin 'vim-scripts/L9'
-Plugin 'vim-scripts/FuzzyFinder'
-Plugin 'wincent/command-t'
+"Plugin 'vim-scripts/L9'
+"Plugin 'vim-scripts/FuzzyFinder'
+"Plugin 'wincent/command-t'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ap/vim-css-color'
 
-Plugin 'pangloss/vim-javascript'
-Plugin 'evanleck/vim-svelte'
+"Plugin 'evanleck/vim-svelte'
 
 
 " colorscheme
-Plugin 'xdefrag/vim-beelzebub'
 Plugin 'gregors/vim-colors-codeschool'
 Plugin 'fcpg/vim-fahrenheit'
 Plugin 'fcpg/vim-orbital'
@@ -139,4 +138,5 @@ set noswapfile
 
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+set autochdir
 
