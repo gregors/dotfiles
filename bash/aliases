@@ -9,7 +9,9 @@ alias ......='cd ../../../../..'
 alias c="clear"
 alias gmail="open https://gmail.com"
 alias gcal="open https://calendar.google.com/calendar/render#main_7"
+alias grep color=auto
 alias hs="history | grep"
+
 
 alias ackjs="ack --ignore-dir=coverage --ignore-dir=dist --ignore-dir=bundles --ignore-dir=node_modules --ignore-dir=static --ignore-dir=assets"
 alias iack="ack --ignore-dir=spec --ignore-dir=log --ignore-dir=tmp --ignore-dir=coverage"
