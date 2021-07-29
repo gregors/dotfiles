@@ -23,9 +23,12 @@ brew install rig
 brew install lynx
 brew install aspell
 brew install dos2unix
-brew install bat
 brew install pgcli
+
+brew install bat
 brew install ripgrep
+brew install exa
+brew install git-delta
 
 brew tap heroku/brew && brew install heroku
 brew install awscli
