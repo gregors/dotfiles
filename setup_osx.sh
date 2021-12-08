@@ -12,6 +12,7 @@ brew install git bash-completion
 
 brew instal tree
 brew instal htop
+brew install glances
 brew instal tmux
 brew install ack
 brew install curl
