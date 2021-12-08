@@ -11,13 +11,13 @@ sudo apt-get install -q -y wget
 sudo apt-get install -q -y curl
 sudo apt-get install -q -y httpie
 sudo apt-get install -q -y jq
-sudo apt-get install -q -y mercurial
 sudo apt-get install -q -y ack-grep
 sudo apt-get install -q -y xclip
 sudo apt-get install -q -y lynx
 sudo apt-get install -q -y aspell
 sudo apt-get install -q -y dos2unix
 sudo apt-get install -q -y bat
+sudo apt-get install -q -y iptraf-ng
 
 sudo apt-get install -q -y vim-nox
 
