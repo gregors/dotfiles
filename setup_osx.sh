@@ -26,6 +26,7 @@ brew install aspell
 brew install dos2unix
 brew install pgcli
 
+brew install hexyl
 brew install bat
 brew install ripgrep
 brew install exa
@@ -38,10 +39,11 @@ brew install docker-compose
 # browsers
 brew cask install google-chrome
 brew cask install firefox
+brew cask install brave-browser
 
 # editors
 brew intall vim
-brew install
+brew install emacs
 brew cask install visual-studio-code
 
 # languages
@@ -54,7 +56,7 @@ brew install elixir
 brew install go
 brew install mit-scheme
 brew install nvm
-brew install rust
+brew install rustup
 
 # databases
 brew install sqlite
