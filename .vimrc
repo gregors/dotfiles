@@ -13,6 +13,7 @@ inoremap jj <Esc>
 
 ca tn tabnew
 ca te tabedit
+ca nc NERDTreeClose
 
 " Shortcut to rapidly toggle `set list` - shows whitespace
 nmap <leader>l :set list!<CR>
@@ -48,7 +49,6 @@ Plugin 'tomlion/vim-solidity'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'ap/vim-css-color'
-
 "Plugin 'evanleck/vim-svelte'
 
 
@@ -77,9 +77,12 @@ filetype off
 " Plugin 'digitaltoad/vim-jade'
 " Plugin 'tpope/vim-haml.git'
 
+" ctrlp settings
 let g:ctrlp_custom_ignore = {
 	\ 'dir':  '\v[\/](\.git|deps|_build|node_modules|cover|coverage)$',
 	\ }
+
+" let g:ctrlp_cmd = 'CtrlPMixed'
 
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
