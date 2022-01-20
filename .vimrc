@@ -77,6 +77,10 @@ filetype off
 " Plugin 'digitaltoad/vim-jade'
 " Plugin 'tpope/vim-haml.git'
 
+let g:ctrlp_custom_ignore = {
+	\ 'dir':  '\v[\/](\.git|deps|_build|node_modules|cover|coverage)$',
+	\ }
+
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
