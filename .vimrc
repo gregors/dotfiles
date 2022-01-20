@@ -14,10 +14,6 @@ inoremap jj <Esc>
 ca tn tabnew
 ca te tabedit
 
-nmap ff :FufFile<CR>
-nmap fd :FufDir<CR>
-" nmap <Leader>t :FufFile <Esc>
-
 " Shortcut to rapidly toggle `set list` - shows whitespace
 nmap <leader>l :set list!<CR>
 
@@ -45,16 +41,13 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'elixir-editors/vim-elixir'
 "Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'tomlion/vim-solidity'
 " Plugin 'fatih/vim-go'
 "Plugin 'rhysd/vim-crystal'
 " Plugin 'andys8/vim-elm-syntax'
 
-"Plugin 'vim-scripts/L9'
-"Plugin 'vim-scripts/FuzzyFinder'
-"Plugin 'wincent/command-t'
-
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ap/vim-css-color'
+"Plugin 'ap/vim-css-color'
 
 "Plugin 'evanleck/vim-svelte'
 
@@ -72,7 +65,6 @@ Plugin 'acarapetis/vim-colors-github'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'joshdick/onedark.vim'
-Plugin 'vim-scripts/C64.vim'
 
 call vundle#end()            " required
 
@@ -82,7 +74,6 @@ colorscheme fahrenheit
 filetype off
 
 " Plugin 'kchmck/vim-coffee-script'
-" Plugin 'jeroenbourgois/vim-actionscript'
 " Plugin 'digitaltoad/vim-jade'
 " Plugin 'tpope/vim-haml.git'
 
@@ -97,34 +88,34 @@ autocmd FileType c,cpp,java,php,ruby,rb,ex,exs autocmd BufWritePre <buffer> %s/\
 " https://stackoverflow.com/questions/5057359/how-can-i-show-hidden-files-starting-with-period-in-nerdtree
 let NERDTreeShowHidden=1
 
-function! RubyMethodFold(line)
-  let line_is_method_or_end = synIDattr(synID(a:line,1,0), 'name') == 'rubyMethodBlock'
-  let line_is_def = getline(a:line) =~ '\s*def '
-  return line_is_method_or_end || line_is_def
-endfunction
-
-set foldexpr=RubyMethodFold(v:lnum)
+" function! RubyMethodFold(line)
+"   let line_is_method_or_end = synIDattr(synID(a:line,1,0), 'name') == 'rubyMethodBlock'
+"   let line_is_def = getline(a:line) =~ '\s*def '
+"   return line_is_method_or_end || line_is_def
+" endfunction
+"
+" set foldexpr=RubyMethodFold(v:lnum)
 
 
 " Execute open rspec buffer
 " Thanks to Ian Smith-Heisters
-function! RunSpec(args)
- if exists("b:rails_root") && filereadable(b:rails_root . "/script/spec")
-   let spec = b:rails_root . "/script/spec"
- else
-   let spec = "spec"
- end
- let cmd = ":! " . spec . " % -cfn " . a:args
- execute cmd
-endfunction
+" function! RunSpec(args)
+"  if exists("b:rails_root") && filereadable(b:rails_root . "/script/spec")
+"    let spec = b:rails_root . "/script/spec"
+"  else
+"    let spec = "spec"
+"  end
+"  let cmd = ":! " . spec . " % -cfn " . a:args
+"  execute cmd
+" endfunction
 
 " Mappings
 "
 " run one rspec example or describe block based on cursor position
-map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)
+" map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)
 
 " run full rspec file
-map !S :call RunSpec("")
+" map !S :call RunSpec("")
 
 " tell vim to keep a backup file
 set backup
