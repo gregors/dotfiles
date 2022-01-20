@@ -78,9 +78,17 @@ filetype off
 " Plugin 'tpope/vim-haml.git'
 
 " ctrlp settings
-let g:ctrlp_custom_ignore = {
-	\ 'dir':  '\v[\/](\.git|deps|_build|node_modules|cover|coverage)$',
-	\ }
+ let g:ctrlp_custom_ignore = {
+ 	\ 'dir':  '(\.git|deps|_build|node_modules|cover|coverage)$',
+ 	\ }
+
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob "" --glob "!.git/"'
+  let g:ctrlp_use_caching = 0
+else
+  let g:ctrlp_clear_cache_on_exit = 0
+endif
 
 " let g:ctrlp_cmd = 'CtrlPMixed'
 
