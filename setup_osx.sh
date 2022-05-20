@@ -31,6 +31,7 @@ brew install bat
 brew install ripgrep
 brew install exa
 brew install git-delta
+brew install procs
 
 brew tap heroku/brew && brew install heroku
 brew install awscli
