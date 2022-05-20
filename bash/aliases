@@ -18,6 +18,7 @@ alias iack="ack --ignore-dir=spec --ignore-dir=log --ignore-dir=tmp --ignore-dir
 alias spec_ack="ack --ignore-dir=apps --ignore-dir=app --ignore-dir=log --ignore-dir=tmp --ignorew-dir=coverage"
 
 alias unsafe_chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security  --user-data-dir="/tmp"'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 
 case $_myos in
   Linux) alias ll="ls -lia --color";;
@@ -89,4 +90,6 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 # websockets
 alias ws="wscat -c 'ws://localhost:4000/socket/websocket?vsn=2.0.0'"
+# elixir
+alias ism="iex -S mix"
 
