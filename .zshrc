@@ -85,16 +85,9 @@ alias ws="wscat -c 'ws://localhost:4000/socket/websocket?vsn=2.0.0'"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-#export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
-
-export HISTIGNORE="...:..:pwd:ls:ll:cd:history:cd -:dc:dps:exit:fg:gs:gd:gt:git gui:git push:gp:git add .:git push:htop:jobs:tree:vim"
-HISTSIZE=10000
-HISTFILESIZE=10000
+export HISTFILE=~/.zhistory
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
 
 export NORMAL="$(tput sgr0)"
 export BLACK="$(tput setaf 0)"
