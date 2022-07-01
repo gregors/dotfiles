@@ -1,12 +1,8 @@
-export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/sbin:$PATH"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 
 _myos="$(uname)"
 
 #bash
+alias ism="iex -S mix"
 alias ..="cd .."
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -127,3 +123,13 @@ export GRAY="$(tput setaf 244)"
 
 #export PS1="\u $GREEN\W$YELLOW \$(git_branch)$NORMAL $GRAY\$(git_current_sha)$NORMAL $RED\$(parse_git_dirty)$NORMAL\n$ "
 bindkey -e # for emacs
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/Users/gregors/.mix/escripts:$PATH"
+
+if type brew &>/dev/null; then
+	FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+	autoload -Uz compinit
+	compinit
+fi
