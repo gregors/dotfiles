@@ -74,17 +74,6 @@ alias da="docker attach"
 
 export EDITOR=vim
 
-#jruby
-alias ngs='JRUBY_OPTS="" ruby --ng-server'  # start nailgun server
-alias ng='JRUBY_OPTS="$JRUBY_OPTS --ng"'
-alias nruby='JRUBY_OPTS="$JRUBY_OPTS --ng" jruby' #jruby using nailgun
-alias nrspec='ng rspec'
-alias nirb='ng irb'
-alias ngem='ng gem'
-alias nrails='ng rails'
-
-#export JRUBY_OPTS=--1.9
-
 alias brick="ruby -run -e httpd . -p 9000"
 
 #  enable history for Elixir's IEX
