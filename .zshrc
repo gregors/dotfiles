@@ -35,13 +35,10 @@ case $_myos in
   *) alias ports='netstat -atp tcp | grep -i "listen"';;
 esac
 
-alias apt-get="sudo apt-get"
-alias agi="sudo apt-get install"
-alias agu="sudo apt-get update && sudo apt-get upgrade"
-
 #git
 alias g="git"
 alias gb="git branch"
+alias gbc="git branch --merged | egrep -v \"(^\*|master|main|dev)\" | xargs git branch -d"
 alias gbv="git branch --verbose"
 alias gd="git diff"
 alias gdc="git diff --cached"
