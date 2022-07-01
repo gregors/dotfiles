@@ -77,11 +77,13 @@ export EDITOR=vim
 alias brick="ruby -run -e httpd . -p 9000"
 
 #  enable history for Elixir's IEX
-export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_bytes 1024000"
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 # websockets
 alias ws="wscat -c 'ws://localhost:4000/socket/websocket?vsn=2.0.0'"
 
+export HISTSIZE=10000
+export SAVEHIST=10000
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 #export PATH="$PATH:$HOME/.rvm/bin"
