@@ -39,6 +39,7 @@ esac
 alias apt-get="sudo apt-get"
 alias agi="sudo apt-get install"
 alias agu="sudo apt-get update && sudo apt-get upgrade"
+alias dzero="find . -type f -size 0 -delete"
 
 #git
 alias g="git"
@@ -67,6 +68,7 @@ alias b="bundle install"
 
 #docker
 alias dc="docker-compose"
+alias dcps="docker-compose ps"
 alias dps="docker ps"
 alias da="docker attach"
 
