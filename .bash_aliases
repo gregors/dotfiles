@@ -9,7 +9,7 @@ alias ......='cd ../../../../..'
 alias c="clear"
 alias gmail="open https://gmail.com"
 alias gcal="open https://calendar.google.com/calendar/render#main_7"
-alias grep color=auto
+alias grep='grep --color=auto'
 alias hs="history | grep"
 
 
