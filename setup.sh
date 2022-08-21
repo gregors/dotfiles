@@ -39,8 +39,12 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
 # copy my config files over
+# -n = treat directories as normal files, enables rewriting them
+# -f = force, remove existing files
+# -s = symbolic
 ln -nfs ~/dotfiles/.gemrc ~/.gemrc
 ln -nfs ~/dotfiles/.gitconfig ~/.gitconfig
+ln -nfs ~/dotfiles/.bash_aliases ~/.bash_aliases
 #ln -nfs ~/dotfiles/.hgrc ~/.hgrc
 ln -nfs ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -nfs ~/dotfiles/.vimrc ~/.vimrc
