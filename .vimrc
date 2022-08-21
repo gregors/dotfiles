@@ -40,11 +40,11 @@ Plugin 'easymotion/vim-easymotion'
 " Plugin 'tpope/vim-rails.git'
 " Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-editors/vim-elixir'
-"Plugin 'leafgarland/typescript-vim'
+" Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'tomlion/vim-solidity'
+" Plugin 'tomlion/vim-solidity'
 " Plugin 'fatih/vim-go'
-"Plugin 'rhysd/vim-crystal'
+" Plugin 'rhysd/vim-crystal'
 " Plugin 'andys8/vim-elm-syntax'
 
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -69,7 +69,7 @@ Plugin 'joshdick/onedark.vim'
 call vundle#end()            " required
 
 " colorscheme codeschool
-colorscheme fahrenheit
+" colorscheme fahrenheit
 
 filetype off
 
@@ -133,10 +133,10 @@ let NERDTreeShowHidden=1
 " map !S :call RunSpec("")
 
 " tell vim to keep a backup file
-set backup
+" set backup
 
 " tell vim where to put its backup files
-set backupdir=~/.vim/backups
+" set backupdir=~/.vim/backups
 
 " tell vim where to put swap files
 " set dir=/private/tmp
