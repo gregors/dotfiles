@@ -45,7 +45,6 @@ brew cask install brave-browser
 # editors
 brew intall vim
 brew install emacs
-brew cask install visual-studio-code
 
 # languages
 brew install gnu-apl
