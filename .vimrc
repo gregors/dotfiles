@@ -34,6 +34,20 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-test/vim-test'
+
+
+
+" Close NERDTree window
+let g:ctrlp_dont_split = 'NERD'
+
+" Toggle NERDTree like Sublime's sidebar
+nmap <Leader>kb :NERDTreeToggle<CR>
+
+" show hidden files
+" https://stackoverflow.com/questions/5057359/how-can-i-show-hidden-files-starting-with-period-in-nerdtree
+let NERDTreeShowHidden=1
 
 " languages
 " Plugin 'posva/vim-vue'
@@ -47,7 +61,6 @@ Plugin 'pangloss/vim-javascript'
 " Plugin 'rhysd/vim-crystal'
 " Plugin 'andys8/vim-elm-syntax'
 
-Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'ap/vim-css-color'
 "Plugin 'evanleck/vim-svelte'
 
@@ -65,6 +78,11 @@ Plugin 'acarapetis/vim-colors-github'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'joshdick/onedark.vim'
+Plugin 'dracula/vim'
+Plugin 'sainnhe/gruvbox-material'
+Plugin 'morhetz/gruvbox'
+Plugin 'FrenzyExists/aquarium-vim'
+Plugin 'NLKNguyen/papercolor-theme'
 
 call vundle#end()            " required
 
@@ -99,9 +117,6 @@ filetype indent on    " Enable filetype-specific indenting
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd FileType c,cpp,java,php,ruby,rb,ex,exs autocmd BufWritePre <buffer> %s/\s\+$//e
 
-" show hidden files
-" https://stackoverflow.com/questions/5057359/how-can-i-show-hidden-files-starting-with-period-in-nerdtree
-let NERDTreeShowHidden=1
 
 " function! RubyMethodFold(line)
 "   let line_is_method_or_end = synIDattr(synID(a:line,1,0), 'name') == 'rubyMethodBlock'
@@ -110,27 +125,6 @@ let NERDTreeShowHidden=1
 " endfunction
 "
 " set foldexpr=RubyMethodFold(v:lnum)
-
-
-" Execute open rspec buffer
-" Thanks to Ian Smith-Heisters
-" function! RunSpec(args)
-"  if exists("b:rails_root") && filereadable(b:rails_root . "/script/spec")
-"    let spec = b:rails_root . "/script/spec"
-"  else
-"    let spec = "spec"
-"  end
-"  let cmd = ":! " . spec . " % -cfn " . a:args
-"  execute cmd
-" endfunction
-
-" Mappings
-"
-" run one rspec example or describe block based on cursor position
-" map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)
-
-" run full rspec file
-" map !S :call RunSpec("")
 
 " tell vim to keep a backup file
 " set backup
@@ -145,4 +139,3 @@ set noswapfile
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 set autochdir
-
