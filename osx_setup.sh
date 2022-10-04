@@ -24,7 +24,6 @@ brew install rig
 brew install lynx
 brew install aspell
 brew install dos2unix
-brew install pgcli
 
 brew install hexyl
 brew install bat
@@ -34,7 +33,7 @@ brew install git-delta
 brew install procs
 
 brew tap heroku/brew && brew install heroku
-brew install awscli
+#brew install awscli
 brew install docker-compose
 
 # browsers
@@ -63,16 +62,17 @@ brew install sqlite
 brew install postgresql
 brew install redis
 brew install mongodb
-brew cask install pgadmin4
-brew cask install graphiql
-brew cask install robo-3t
+brew install pgcli
+#brew cask install pgadmin4
+#brew cask install graphiql
+#brew cask install robo-3t
 
 brew install sl
 brew install cowsay
 brew install ponysay
 brew install neofetch
 
-brew cask install mactex
+#brew cask install mactex
 
 # install vim package manager
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
