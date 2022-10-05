@@ -24,6 +24,12 @@ map ,/ :s/^/\/\//<CR>
 map H ^
 map L $
 
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+
 filetype plugin on  " Enable filetype-specific plugins
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -37,18 +43,6 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-test/vim-test'
 
-
-
-" Close NERDTree window
-let g:ctrlp_dont_split = 'NERD'
-
-" Toggle NERDTree like Sublime's sidebar
-nmap <Leader>kb :NERDTreeToggle<CR>
-
-" show hidden files
-" https://stackoverflow.com/questions/5057359/how-can-i-show-hidden-files-starting-with-period-in-nerdtree
-let NERDTreeShowHidden=1
-
 " languages
 " Plugin 'posva/vim-vue'
 " Plugin 'tpope/vim-rails.git'
@@ -60,10 +54,11 @@ Plugin 'pangloss/vim-javascript'
 " Plugin 'fatih/vim-go'
 " Plugin 'rhysd/vim-crystal'
 " Plugin 'andys8/vim-elm-syntax'
-
-"Plugin 'ap/vim-css-color'
-"Plugin 'evanleck/vim-svelte'
-
+" Plugin 'ap/vim-css-color'
+" Plugin 'evanleck/vim-svelte'
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'digitaltoad/vim-jade'
+" Plugin 'tpope/vim-haml.git'
 
 " colorscheme
 Plugin 'gregors/vim-colors-codeschool'
@@ -89,11 +84,17 @@ call vundle#end()            " required
 " colorscheme codeschool
 " colorscheme fahrenheit
 
-filetype off
+" Close NERDTree window
+let g:ctrlp_dont_split = 'NERD'
 
-" Plugin 'kchmck/vim-coffee-script'
-" Plugin 'digitaltoad/vim-jade'
-" Plugin 'tpope/vim-haml.git'
+" Toggle NERDTree like Sublime's sidebar
+nmap <Leader>kb :NERDTreeToggle<CR>
+
+" show hidden files
+" https://stackoverflow.com/questions/5057359/how-can-i-show-hidden-files-starting-with-period-in-nerdtree
+let NERDTreeShowHidden=1
+
+filetype off
 
 " ctrlp settings
  let g:ctrlp_custom_ignore = {
@@ -116,15 +117,6 @@ filetype indent on    " Enable filetype-specific indenting
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd FileType c,cpp,java,php,ruby,rb,ex,exs autocmd BufWritePre <buffer> %s/\s\+$//e
-
-
-" function! RubyMethodFold(line)
-"   let line_is_method_or_end = synIDattr(synID(a:line,1,0), 'name') == 'rubyMethodBlock'
-"   let line_is_def = getline(a:line) =~ '\s*def '
-"   return line_is_method_or_end || line_is_def
-" endfunction
-"
-" set foldexpr=RubyMethodFold(v:lnum)
 
 " tell vim to keep a backup file
 " set backup
