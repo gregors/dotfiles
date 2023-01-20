@@ -71,6 +71,7 @@ brew install sl
 brew install cowsay
 brew install ponysay
 brew install neofetch
+brew install lolcat
 
 #brew cask install mactex
 
