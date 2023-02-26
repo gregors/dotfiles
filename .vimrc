@@ -108,7 +108,7 @@ filetype off
 
 if executable('rg')
   set grepprg=rg\ --color=never
-  let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob "" --glob "!.git/"'
+  let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob "" --glob "!.git/" --glob "!deps/"'
   let g:ctrlp_use_caching = 0
 else
   let g:ctrlp_clear_cache_on_exit = 0
