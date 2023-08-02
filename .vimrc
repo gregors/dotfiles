@@ -5,11 +5,14 @@ set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 set number
 set encoding=utf-8
+set tags=./tags,tags;$HOME
 
 " make kj to ESC
 inoremap kj <Esc>
 inoremap jk <Esc>
 inoremap jj <Esc>
+
+let mapleader = "," " map leader to comma
 
 ca tn tabnew
 ca te tabedit
@@ -42,6 +45,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-test/vim-test'
+
+let test#javascript#jest#executable = 'node --experimental-vm-modules node_modules/.bin/jest'
 
 " languages
 " Plugin 'posva/vim-vue'
@@ -130,4 +135,4 @@ set noswapfile
 
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
-set autochdir
+" set autochdir
