@@ -15,7 +15,8 @@ alias hs="history | grep"
 
 alias ackjs="ack --ignore-dir=coverage --ignore-dir=dist --ignore-dir=bundles --ignore-dir=node_modules --ignore-dir=static --ignore-dir=assets"
 alias iack="ack --ignore-dir=spec --ignore-dir=log --ignore-dir=tmp --ignore-dir=coverage"
-alias spec_ack="ack --ignore-dir=apps --ignore-dir=app --ignore-dir=log --ignore-dir=tmp --ignorew-dir=coverage"
+alias spec_ack="ack --ignore-dir=apps --ignore-dir=app --ignore-dir=log --ignore-dir=tmp --ignore-dir=coverage"
+alias acke="ack --ignore-dir=deps --ignore-dir=cover --ignore-dir=log --ignore-dir=tmp --ignore-dir=cover"
 
 alias unsafe_chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security  --user-data-dir="/tmp"'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
