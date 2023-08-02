@@ -34,7 +34,8 @@ brew install procs
 
 brew tap heroku/brew && brew install heroku
 #brew install awscli
-brew install docker-compose
+#brew install docker-compose
+brew install podman
 
 # browsers
 brew cask install google-chrome
