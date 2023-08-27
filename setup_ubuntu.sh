@@ -12,3 +12,4 @@ sudo apt-get install gufw
 sudo apt-get install tcpdump
 sudo apt-get install net-tools
 sudo apt-get install ripgrep
+sudo apt-get install lm-sensors
