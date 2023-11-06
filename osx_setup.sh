@@ -11,6 +11,7 @@ brew install git-gui
 brew install git bash-completion
 
 brew instal tree
+brew instal btop
 brew instal htop
 brew install glances
 brew instal tmux
@@ -58,12 +59,13 @@ brew install go
 brew install mit-scheme
 brew install nvm
 brew install rustup
+brew install ruby
 
 # databases
 brew install sqlite
-brew install postgresql
-brew install redis
-brew install mongodb
+#brew install postgresql
+#brew install redis
+#brew install mongodb
 brew install pgcli
 #brew cask install pgadmin4
 #brew cask install graphiql
