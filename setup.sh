@@ -23,9 +23,9 @@ sudo apt-get install -q -y vim-nox
 
 # databases
 sudo apt-get install -q -y sqlite3
-sudo apt-get install -q -y postgresql
-sudo apt-get install -q -y redis
-sudo apt-get install -q -y mongodb
+#sudo apt-get install -q -y postgresql
+#sudo apt-get install -q -y redis
+#sudo apt-get install -q -y mongodb
 
 # fun
 sudo apt-get install -q -y sl
