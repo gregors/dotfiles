@@ -12,6 +12,9 @@ inoremap kj <Esc>
 inoremap jk <Esc>
 inoremap jj <Esc>
 
+" split after comma using leader s after visual selection
+vnoremap <Leader>s :s/,\s\?/\r/g<CR>
+
 let mapleader = "," " map leader to comma
 
 ca tn tabnew
@@ -54,7 +57,7 @@ let test#javascript#jest#executable = 'node --experimental-vm-modules node_modul
 " Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-editors/vim-elixir'
 " Plugin 'leafgarland/typescript-vim'
-Plugin 'pangloss/vim-javascript'
+" Plugin 'pangloss/vim-javascript'
 " Plugin 'tomlion/vim-solidity'
 " Plugin 'fatih/vim-go'
 " Plugin 'rhysd/vim-crystal'
